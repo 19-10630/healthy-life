@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+    <title>메인 메뉴 만들기</title>
+    <meta charset="utf-8">
+   <style media="screen">
+     h1 {
+  text-align: center; color:white; font-size:80px; font-family:Lucida;
+}
+h4 {
+  text-align: center; color:white; font-size:30px; font-family:Lucida;
+}
+h1.title {
+  position: relative;
+  left: 30px;
+  text-align: center;
+  color:#5ba;
+}
+h2.information {
+  position: relative;
+  left:20px;
+  color:gray; font-family: Courier new;
+}
+h2.title2 {
+  color:#5ba; font family:Lucida;
+  font-size: 40px;
+  position: relative;
+  left: 25px;
+}
+p.image {
+  position: relative;
+  left: 30px;
+}
+
+
+
+.header{width:1520px; height:15%;background :#5ba791; }
+* { margin:0; }
+ul, li { list-style:none; }
+a { color:#fff; text-decoration:underline; }
+a:hover { color:#000; text-decoration:none; }
+#wrap{width:973px; height:auto; float:left;}
+#main_menu{width:1520px; height:50px; float:left; background: #5ba;}
+.gnb{padding:0}
+.gnb a {width:290px; padding:0 5px 0 5px; display:block; text-decoration:none; }
+.gnb li { position:relative; float:left; margin-right:11px; }
+.gnb li a { height:30px; text-align:center; line-height:50px; font-size:1.5em;  color:#000; font-family:Courier New;}
+.gnb  li  a:hover { color:#09f; }
+.gnb  li  ul { display:none; position:absolute; top:50px; left:0; }
+.gnb  li:hover ul { display:block; }
+.gnb li ul a {width:1px; height:35px; background-color:#000; color:#fff; text-align:center; line-height:37px; border-bottom:1px solid #fff; }
+.gnb li ul a:hover { background-color:#555; }
+.section{width:1470px; height:900px; float:middle;
+      background :white;      }
+
+  </style>
+  </head>
+
+  <body>
+    <header class="header">
+        <h1>HEALTHY LIFE!</h1>
+    <h4>FOR YOUR HEALTH</h4>
+
+  </header>
+  <div id="wrap">
+     <div id="main_menu">
+       <ul class="gnb">
+         <li><a href="home.html" title="HOME">HOME</a></li>
+         <li><a href="basic.html" title="BASIC">BASIC</a></li>
+         <li><a href="news.html" title="NEWS">NEWS</a>
+         </li>
+         <li><a href="related.html" title="RELATED">RELATED</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="section">
+      <br><br><br>
+      <h1 class="title">information</h1><br>
+      <p><h2 class="title2">What is AI?</h2><br>
+      <p><h2 class="information">AI is a set of concepts, tools, and techniques
+        that represents huge disruptive and transformative potential. Definition-
+        wise, we can think of AI simply as intelligence exhibited by machines that can be used in a beneficial way (e.g., carrying out tasks,
+        making decisions, assisting humans, saving lives). More specifically, AI describes when a machine is able to learn from information
+        (data), generate some degree of understanding, and then use the knowledge learned to do something. AI includes machine learning and
+        specific techniques such as deep learning as subsets.</h2></p>
+
+      <p class="image"><img src="information-ai.PNG" title="range of AI" width="650" height="550">
+
+        <br><br><br>
+
+      <p><h2 class="title2">Advantages and benefits of AI</h2><br>
+      <p><h2 class="information">Making decisions and taking action based solely on historical precedent, simple analytics, and gut feel
+        no longer gets the job done—nor does pursuing near-sighted goals or commoditized technologies. And yet, too many businesses remain
+        mired in the status quo. More and more, it’s those that effectively use analytics who succeed; that is, those that extract information
+        such as patterns, trends, and insights from data in order to make decisions, take actions, and produce outcomes. This includes both
+        traditional analytics and advanced analytics, which are complementary. Also, AI allows humans to use analytics in ways they would
+        otherwise not be able to on their own.<br><br>
+        Data is a core advantage if, and only if, you know how to use it. Most companies should begin to think of themselves as data and analytics
+        companies, regardless of what their core offerings are. As long as data is involved, this is a critical step in getting ahead of the
+       competition while also gaining an increased ability to create huge benefits for both people and business.<br><br>
+       Some highly beneficial and advanced applications of AI include helping blind and visually disabled people “see” and cardiovascular
+       disease assessment and prediction of risk factors from retinal scan images.
+
+       <br><br><br>
+
+       <p><h2 class="title2">What is machine learning?</h2><br>
+       <p><h2 class="information">Machine learning is the process that powers many of the services we use today—recommendation systems
+       like those on Netflix, YouTube, and Spotify; search engines like Google and Baidu; social-media feeds like Facebook and Twitter;
+       voice assistants like Siri and Alexa. The list goes on.<br><br>
+       <img src="netflix.PNG" title="Netflix" width="470" height="200">
+       <img src="spotify.PNG" title="Spotify" width="470" height="200">
+       <img src="google.PNG" title="Google" width="470" height="200">
+       <p><img src="youtube.PNG" title="Youtube" width="470" height="450">
+       <img src="facebook.PNG" title="Facebook" width="470" height="450">
+       <img src="siri.PNG" title="Siri" width="470" height="450">
+
+       <br><br><br>
+
+       In all of these instances, each platform is collecting as much data about you as possible—what genres you like watching, what links
+       you are clicking, which statuses you are reacting to—and using machine learning to make a highly educated guess about what you might
+       want next. Or, in the case of a voice assistant, about which words match best with the funny sounds coming out of your mouth.
+
+       <br><br><br>
+
+       Frankly, this process is quite basic: find the pattern, apply the pattern. But it pretty much runs the world.That’s in big part thanks
+       to an invention in 1986, courtesy of Geoffrey Hinton, today known as the father of deep learning.</h2><br>
+       <p class="image"><img src="information-ML2.PNG" title="Geoffrey Hinton" width="720" height="600">
+       <img src="information-ML3.PNG" width="720" height="600">
+
+      <br><br><br>
+
+      <p><h2 class="title2">What is deep learning?</h2><br>
+      <p><h2 class="information">Deep learning is a machine learning technique that teaches computers to do what comes naturally to humans:
+      learn by example. Deep learning is a key technology behind driverless cars, enabling them to recognize a stop sign, or to distinguish
+      a pedestrian from a lamppost. It is the key to voice control in consumer devices like phones, tablets, TVs, and hands-free speakers.
+      Deep learning is getting lots of attention lately and for good reason. It’s achieving results that were not possible before.</h2><br>
+      <p class="image"><img src="information-DL.PNG" title="Deep Learning" width="720" height="450">
+      <img src="information-DL2.PNG" title="Deep Learning" width="720" height="450">
+
+      <br><br><br>
+
+      <h2 class="information">In deep learning, a computer model learns to perform classification tasks directly from images, text, or sound. Deep learning models
+      can achieve state-of-the-art accuracy, sometimes exceeding human-level performance. Models are trained by using a large set of labeled
+      data and neural network architectures that contain many layers.</h2>
+
+      <br><br><br>
+
+      <p><h2 class="title2">What is Neural Networks?</h2><br>
+      <p><h2 class="information">Neural networks, also known as artificial neural networks (ANNs) or simulated neural networks (SNNs),
+      are a subset of machine learning and are at the heart of deep learning algorithms. Their name and structure are inspired by the
+      human brain, mimicking the way that biological neurons signal to one another.
+
+      <br><br><br>
+
+      Artificial neural networks (ANNs) are comprised of a node layers, containing an input layer, one or more hidden layers, and an output layer.
+      Each node, or artificial neuron, connects to another and has an associated weight and threshold. If the output of any individual node is
+      above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed
+      along to the next layer of the network.</h2><br>
+      <p class="image"><img src="information-NN.PNG" title="Neural Networks" width="850" height="450">
+
+</h2>
+      </section>
+    </body>
+    </html>

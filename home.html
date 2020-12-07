@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+    <title>메인 메뉴 만들기</title>
+    <meta charset="utf-8">
+   <style media="screen">
+     h1  {
+  text-align: center; color:white; font-size:80px; font-family:Lucida;
+}
+h4 {
+  text-align: center; color:white; font-size:30px; font-family:Lucida;
+}
+
+
+
+.header{width:100%; height:15%;background :slateblue; }
+* { margin:0; }
+ul, li { list-style:none; }
+a { color:#fff; text-decoration:underline; }
+a:hover { color:#000; text-decoration:none; }
+#wrap{width:973px; height:auto; float:left;}
+#main_menu{width:1520px; height:50px; float:left; background:#b3b3ff;}
+.gnb{padding:0}
+.gnb a {width:290px; padding:0 5px 0 5px; display:block; text-decoration:none; }
+.gnb li { position:relative; float:left; margin-right:11px; }
+.gnb li a { height:30px;text-align:center; line-height:50px; font-size:1.05em;  color:#000; }
+.gnb  li  a:hover { color:#09f; }
+.gnb  li  ul { display:none; position:absolute; top:50px; left:0; }
+.gnb  li:hover ul { display:block; }
+.gnb li ul a {width:120px; height:35px; background-color:#000; color:#fff; text-align:center; line-height:37px; border-bottom:1px solid #fff; }
+.gnb li ul a:hover { background-color:#555; }
+
+.section{width:100%; height:1000px; float:middle;
+            background : #e6e6ff;      }
+
+  h5.medicine {
+position: absolute;
+       left: 100px; top: 360px;
+        }
+  h5.architect {
+position: absolute;
+        left: 780px; top: 360px;
+        }
+  h5.heart {
+position: absolute;
+        left: 515px; top: 580px;
+          }
+  h5.ai {
+position: absolute;
+        left: 100px; top:790px;
+           }
+h5.enter {
+position: absolute;
+      left: 780px; top: 790px;
+      }
+
+h3 { text-align: center; color:DarkSlateGrey; font-size:30px;
+}
+
+
+P.A {position: absolute;
+   left:15px; font-size:20px; }
+P.B {position: absolute;
+      left:20px; font-size:20px;}
+P.C {position: absolute;
+     left:20px; font-size:20px;}
+P.D {position: absolute;
+    left:20px; font-size:20px; }
+
+
+  </style>
+  </head>
+
+  <body>
+    <header class="header">
+        <h1><id='1'>HEALTHY LIFE!</h1>
+    <h4>FOR YOUR HEALTH</h4>
+
+  </header>
+  <div id="wrap">
+     <div id="main_menu">
+       <ul class="gnb">
+         <li><a href="check.html" title="MEDICINE">MEDICINE</a>
+           <ul>
+             <li><a href="diseases.html" title="DISEASES">DISEASES</a></li>
+             <li><a href="medicine.html" title="MEDICINE">MEDICINE</a>
+             <li><a href="check.html" title="CAUTION">CHECK</a>
+             </li>
+           </ul></li>
+
+         <li><a href="login.html" title="ARCHITECTURE">ARCHITECTURE</a>
+           <ul>
+             <li><a href="distic.html" title="DISTINCTIVE">DISTINCTIVE</a></li>
+             <li><a href="variety.html" title="VARIETY">VARIETY</a>
+             <li><a href="login.html" title="LOGIN">LOGIN</a>
+             </li>
+           </ul>
+         </li>
+
+         <li><a href="basic.html" title="AI">AI</a>
+           <ul>
+             <li><a href="basic.html" title="BASIC">BASIC</a></li>
+             <li><a href="news.html" title="NEWS">NEWS</a>
+             <li><a href="related.html" title="RELATED">RELATED</a>
+             </li>
+          </ul>
+         </li>
+
+         <li><a href="About.html" title="ENTERTAINMENT">ENTERTAINMENT</a>
+           <ul>
+             <li><a href="About.html" title="ABOUT">ABOUT</a></li>
+             <li><a href="스포츠.html" title="SPORTS">SPORT</a>
+             <li><a href="뮤직.html" title="MUSIC">MUSIC</a>
+             </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+      <section class="section">
+        <form name="formest">
+        <br><br><br><br>   <h3>In our website, we give you the information <br>about how to make our life healthy.</h3>
+
+      <h5 class="medicine"><img src="./home-medicine.jpg" width="400"  height="250" title="MEDICINE"></h>
+        <p class="A">⚡증상을 검색해보고 그에 맞는 질병, 약을 알려주는 온라인 병원⚡</p>
+       <h5 class="architect"> <img src="./home-architect.jpg" width="400"  height="250" title="ARCHITECTURE"> </h>
+         <p class="B">🌈셰계 속의 다양하고 독특한 건축물들을 한눈에 찾아봄으로서 생활 속에 다양한 건축을 대입하도록 도와주는 사이트🌈</p>
+       <h5 class="heart"> <img src="./home-heart.png" width="250"  height="250" title="HEALTHY LIFE" ></h>
+       <h5 class="ai"> <img src="./home-ai.PNG" width="400"  height="250" title="AI"></h>
+         <p class="C">🔥AI의 정의와 하위 개념부터 시작해 관련된 뉴스와 진로까지 포함하고 있는 AI 정보 사이트🔥</p>
+       <h5 class="enter"> <img src="./home-enter.jpg" width="400"  height="250" title="ENTERTAINMENT"></h>
+         <p class="D">💦건강한 삶 속에서 요구되는 신체적, 정신적 건강을 향상시키는 방법인 여가생활에 대한 정보를 주는 사이트💦</p>
+
+
+
+        </form>
+      </section>
+
+
+    </body>
+    </html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+    <title>메인 메뉴 만들기</title>
+    <meta charset="utf-8">
+   <style media="screen">
+     h1  {
+  text-align: center; color:white; font-size:80px; font-family:Lucida;
+}
+h4 {
+  text-align: center; color:white; font-size:30px; font-family:Lucida;
+}
+
+
+
+.header{width:100%; height:15%;background :saddlebrown; }
+* { margin:0; }
+ul, li { list-style:none; }
+a { color:#fff; text-decoration:underline; }
+a:hover { color:#000; text-decoration:none; }
+#wrap{width:973px; height:auto; float:left;}
+#main_menu{width:1520px; height:50px; float:left; background:tan; }
+.gnb{padding:0}
+.gnb a {width:290px; padding:0 5px 0 5px; display:block; text-decoration:none; }
+.gnb li { position:relative; float:left; margin-right:11px; }
+.gnb li a { height:30px; text-align:center; line-height:50px; font-size:1.5em;  color:#000; font-family:Courier New;}
+.gnb  li  a:hover { color:#09f; }
+.gnb  li  ul { display:none; position:absolute; top:50px; left:0; }
+.gnb  li:hover ul { display:block; }
+
+.gnb li ul a {width:120px; height:35px; background-color:#000; color:#fff; text-align:center; line-height:37px; border-bottom:1px solid #fff; }
+.gnb li ul a:hover { background-color:#555; }
+.section{width:100%; height:200%; float:middle;
+      background :#fff4e6;      }
+
+h2 {font-size: 35px; color: black;}
+
+/* body {
+  background-image src:"로그인배경.png";
+} */
+
+  </style>
+  </head>
+
+  <body>
+    <header class="header">
+        <h1><id='1'>HEALTHY LIFE!</h1>
+    <h4>FOR YOUR HEALTH</h4>
+
+
+    </header>
+    <div id="wrap">
+       <div id="main_menu">
+         <ul class="gnb">
+           <li><a href="home.html" title="HOME">HOME</a></li>
+           <li><a href="distinc.html" title="DISTINCTIVE">DISTINCTIVE</a>
+             <ul>
+               <li><a href="distinc.html" title="HOUSE">HOUSE</a></li>
+               <li><a href="distinc.html" title="BUILDING">BUILDING</a></li>
+             </ul>
+           </li>
+           <li><a href="variety.html" title="VARIETY">VARIETY</a><ul>
+             <li><a href="variety.html" title="GLOBAL">GLOBAL</a></li></ul>
+           </li>
+           <li><a href="login.html" title="LOGIN">LOGIN</a>
+             <ul>
+                <li><a href="login.html" title="login">login </a></li>
+                <li><a href="login.html" title="LOGOUT">LOGOUT </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <section class="section">
+
+        <form name="formest">
+       <br><br><br><br>
+
+       <h2><id='2'>✨JOIN US! We only take your personal information for telling you many information about ARCHITECTURE.
+         Join and get them! We are waiting for you!✨
+        </h2> <br><br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <strong> ◽ 이름 :</strong> <input type="name" size="16" maxlength="15" value="이름을 입력하세요" required ><br><br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    <strong>◽ 성별 :</strong>
+          &nbsp&nbsp <input type="radio" name="radion_btn" value="1" >남자
+           &nbsp&nbsp<input type="radio" name="radion_btn" value="2">여자 <br><br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp        <strong>◽ 좋아하는 건축물 :</strong> <textarea rows=“100” cols=“60” size="40" ></textarea> <br> <br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp        <strong>◽ 존경하는 건축가 : </strong> <input type=“text” name=“tx” size=“30”  maxlength=“16”> <br> <br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp        <strong>◽ 관심 있는 건축분야 : </strong>
+          &nbsp&nbsp<input type="checkbox" name="check_top" value="1" >탑 &nbsp&nbsp
+          <input type="checkbox" name="check_church" value="2" > 교회 &nbsp&nbsp
+          <input type="checkbox" name="check_temple" value="3">탑 &nbsp&nbsp
+          <input type="checkbox" name="check_house" value="4">주택 &nbsp&nbsp
+          <input type="checkbox" name="check_etc" value="5">기타<br> <br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp      <strong>◽ 이 사이트를 어떻게 알게 되었나요? </strong>
+        &nbsp&nbsp<input type="checkbox" name="check_introduce" value="1" >지인 소개 &nbsp&nbsp
+        <input type="checkbox" name="check_ad" value="2" > 광고 &nbsp&nbsp
+        <input type="checkbox" name="check_serch" value="3">검색 &nbsp&nbsp
+        <input type="checkbox" name="check_etcc" value="4">기타 <br> <br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    <strong>◽ ID :</strong>  <input type="text" size="16" maxlength="10" required><br><br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <strong>◽ PASS :</strong> <input type="password" name="p1" size="30" maxlength="15" required> <br> <br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <strong>◽ 알림 수신 :  </strong>
+  &nbsp&nbsp<input type="checkbox" name="no" value="4">x &nbsp&nbsp
+ <input type="checkbox" name="message" value="1" >문자 &nbsp&nbsp
+ <input type="checkbox" name="check_kakao" value="2" > 카톡 &nbsp&nbsp
+ <input type="checkbox" name="check_email" value="3">이메일 &nbsp&nbsp
+
+ <input type="email" id="e_id" name="e_name" placeholder="abc@abc.com" >
+ <br> <br> <br><br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp✨Thank you for answering✨ <br><br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value="제출"> &nbsp&nbsp&nbsp&nbsp <input type="reset" value="취소">
+
+        </form>
+
+
+      </section>
+    </body>
+    </html>
